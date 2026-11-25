@@ -39,6 +39,6 @@ if st.button("Predict Fare"):
     if response.status_code == 200:
         data = response.json()
         fare = data.get("fare")
-        st.success(f"Estimated Fare: **${fare:.2f}**")
+        st.success(f"Estimated Fare: ${round(fare, 2)}")
     else:
         st.error(f"Error calling API: status code {response.status_code}")
