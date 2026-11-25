@@ -23,7 +23,7 @@ with col2:
     dropoff_latitude = st.number_input("Dropoff Latitude", value=40.769802, format="%.6f")
 
 pickup_datetime = f"{pickup_date} {pickup_time}"
-url = "http://localhost:8000/predict"
+url = st.secrets['API_URL']
 
 if st.button("Predict Fare"):
     params = {
