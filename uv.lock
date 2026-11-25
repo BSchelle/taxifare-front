@@ -884,7 +884,7 @@ wheels = [
 ]
 
 [[package]]
-name = "taxifare-front"
+name = "taxifare-frontend"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
